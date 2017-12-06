@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Go-Married</title>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="Go-Married" name="description">
+    <meta content="Go-Married" name="author">
+    <!--Fav-->
+    <link href="images/favicon.ico" rel="shortcut icon">
+    
+    <!--styles-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    
+    <!--fonts google-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+    
+    <!--[if lt IE 9]>
+       <script type="text/javascript" src="js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!--PRELOADER-->
+    <div id="preloader">
+      <div id="status">
+        <img alt="logo" src="images/logo-big.png">
+      </div>
+    </div>
+    <!--/.PRELOADER END-->
+
+    <!--HEADER -->
+    <div class="header">
+      <div class="for-sticky">
+        <!--LOGO-->
+        <div class="col-md-2 col-xs-6 logo">
+          <a href="index.html"><img alt="logo" class="logo-nav" src="images/logo-big.png"></a>
+        </div>
+        <!--/.LOGO END-->
+      </div>
+      <div class="menu-wrap">
+        <nav class="menu">
+          <div class="menu-list">
+            <a data-scroll="" href="#home" class="active">
+              <span>Home</span>
+            </a>
+            <a data-scroll="" href="#about">
+              <span>Form Mempelai</span>
+            </a>
+            <a data-scroll="" href="#form2">
+              <span>Form Orang Tua</span>
+            </a>
+             <a data-scroll="" href="#">
+              <span>Save to PDF</span>
+            </a>
+          </div>
+        </nav>
+        <button class="close-button" id="close-button">Close Menu</button>
+      </div>
+      <button class="menu-button" id="open-button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button><!--/.for-sticky-->
+    </div>
+    <!--/.HEADER END-->
+    
+    <!--CONTENT WRAP-->
+    <div class="content-wrap">
+      <!--CONTENT-->
+      <div class="content" >
+        <!--HOME-->
+        <section id="home" style="background-image: url(images/gowed.jpg);">
+          <div class="container">
+            <div class="row">
+              <div class="wrap-hero-content">
+                  <div class="hero-content">
+                    <h1>Go Married</h1>
+                    <br>
+                    <h4>sudah siap menikah?</h4>
+                    <h6>isi formnya dibawah!</h6>
+                  </div>
+              </div>
+              <div class="mouse-icon margin-20">
+                <div class="scroll"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--/.HOME END-->
+
+        <form name="form1" role="form" method="POST" action="insert.php">
+
+        <!--FORM MEMPELAI-->
+        <section id="about">
+          <div class="col-md-6 col-xs-12 no-pad">
+            <div class="bg-about" style="background: url('images/wedd2.jpg');"></div>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12 white-col">
+            <div class="row">
+              <!--OWL CAROUSEL2-->
+              <div class="owl-carousel2">
+                <div class="col-md-12">
+                  <div class="col-md-12">
+                     
+                          <fieldset>
+                              <legend>Data Diri Mempelai Pria</legend>
+
+                              <div class="form-group col-md-12">
+                                  <label for="nama">Nama</label>
+                                  <input type="text" class="form-control" name="nama" id="full_name" placeholder="Full Name">
+                              </div>
+
+                              <div class="form-group col-md-6">
+                                  <label for="tempat_lahir">Tempat Lahir</label>
+                                  <input type="text" class="form-control" name="tempat_lahir" id="tempat_lahir" placeholder="Kota/Kabupaten Anda Lahir">
+                              </div>
+
+                              <div class="form-group col-md-6">
+                                  <label for="tgl_lahir">Tanggal Lahir</label>
+                                  <input type="date" class="form-control" name="tgl_lahir" id="tgl_lahir">
+                              </div>
+
+                              <div class="form-group col-md-2">
+                                  <label for="umur">Usia</label>
+                                  <input type="number" class="form-control" name="umur" id="umur" placeholder="0">
+                              </div>
+
+                              <div class="form-group col-md-10">
+                                  <label for="agama">Agama</label>
+                                  <input type="text" class="form-control" name="agama" id="agama" placeholder="Agama">
+                              </div>
+
+                              <div class="form-group col-md-12">
+                                  <label for="alamat">Alamat</label>
+                                  <input type="text" class="form-control" name="alamat" id="alamat" placeholder="Alamat saat ini">
+                              </div>
+
+                              <div class="form-group col-md-6">
+                                  <label for="status_wn">Status Kewarganegaraan</label>
+                                  <select class="form-control" name="status_wn" id="status_wn">
+                                      <option value="pilih" disabled selected>... Pilih Kewarganegaraan ...</option>
+                                      <option value="WNI">Warga Negara Indonesia</option>
+                                      <option value="WNA">Warga Negara Asing</option>
+                                      <option value="TK">Tanpa Kewarganegaraan</option>
+                                  </select>
+                              </div>
+
+                              <div class="form-group col-md-6">
+                                  <label for="status_kawin">Status Perkawinan</label>
+                                  <select class="form-control" name="status_kawin" id="status_kawin">
+                                      <option value="pilih" disabled selected>... Pilih Status Perkawinan ...</option>
+                                      <option value="Belum Kawin">Belum Kawin</option>
+                                      <option value="Sudah Kawin">Sudah Kawin</option>
+                                  </select>
+                              </div>
+
+                          </fieldset>
+                  </div>
+                </div>
+              
+                <div class="col-md-12 col-sm-12 col-xs-12 white-col">
+                  <div class="row">
+                    <div class="col-md-12">
+                    <fieldset>
+                        <legend>Data Diri Mempelai Wanita</legend>
+
+                        <div class="form-group col-md-12">
+                            <label for="nama_cw">Nama</label>
+                            <input type="text" class="form-control" name="nama_cw" id="full_name" placeholder="Full Name">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="tempat_lahir_cw">Tempat Lahir</label>
+                            <input type="text" class="form-control" name="tempat_lahir_cw" id="tempat_lahir_cw" placeholder="Kota/Kabupaten Anda Lahir">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="tgl_lahir_cw">Tanggal Lahir</label>
+                            <input type="date" class="form-control" name="tgl_lahir_cw" id="tgl_lahir_cw">
+                        </div>
+
+                        <div class="form-group col-md-2">
+                            <label for="umur_cw">Usia</label>
+                            <input type="number" class="form-control" name="umur_cw" id="umur_cw" placeholder="0">
+                        </div>
+
+                        <div class="form-group col-md-10">
+                            <label for="agama_cw">Agama</label>
+                            <input type="text" class="form-control" name="agama_cw" id="agama_cw" placeholder="Agama">
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <label for="alamat_cw">Alamat</label>
+                            <input type="text" class="form-control" name="alamat_cw" id="alamat_cw" placeholder="Alamat saat ini">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="status_wn_cw">Status Kewarganegaraan</label>
+                            <select class="form-control" name="status_wn_cw" id="status_wn_cw">
+                                <option value="pilih" disabled selected>... Pilih Kewarganegaraan ...</option>
+                                <option value="WNI">Warga Negara Indonesia</option>
+                                <option value="WNA">Warga Negara Asing</option>
+                                <option value="TK">Tanpa Kewarganegaraan</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="status_kawin_cw">Status Perkawinan</label>
+                            <select class="form-control" name="status_kawin_cw" id="status_kawin_cw">
+                                <option value="pilih" disabled selected>... Pilih Status Perkawinan ...</option>
+                                <option value="Belum Kawin">Belum Kawin</option>
+                                <option value="Sudah Kawin">Sudah Kawin</option>
+                            </select>
+                        </div>
+
+                    </fieldset>
+            </div>
+                </div>
+              </div>
+              <!--/.OWL CAROUSEL2 END-->
+            </div>
+          </div>
+        </section>
+        <!--/.FORM MEMPELAI END-->
+
+        <!--FORM ORTU-->
+        <section id="form2">
+          <div class="col-md-6 col-xs-12 no-pad" style="float: right;">
+            <div class="bg-about" style="background: url('images/weddpar.jpg'); width: 100%; height: 90%;"></div>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12 white-col" style="float: left;">
+            <div class="row">
+              <!--OWL CAROUSEL2-->
+              <div class="owl-carousel2">
+                <div class="col-md-12">
+                  <div class="col-md-12">
+                          <fieldset>
+                              <legend>Orang tua laki-laki Mempelai Pria</legend>
+
+                              <div class="form-group col-md-6">
+                                  <label for="nama_ay">Nama</label>
+                                  <input type="text" class="form-control" name="nama_ay" id="nama_ay" placeholder="Nama Lengkap">
+                              </div>
+
+                              <div class="form-group col-md-6">
+                                  <label for="alamat_ay">Alamat</label>
+                                  <input type="text" class="form-control" name="alamat_ay" id="alamat_ay" placeholder="Alamat saat ini">
+                              </div>
+
+                              <div class="form-group col-md-6">
+                                  <label for="tgl_lahir_ay">Tanggal Lahir</label>
+                                  <input type="date" class="form-control" name="tgl_lahir_ay" id="tgl_lahir_ay">
+                              </div>
+
+                              <div class="form-group col-md-6">
+                                  <label for="agama_ay">Agama</label>
+                                  <input type="text" class="form-control" name="agama_ay" id="agama_ay" placeholder="Agama">
+                              </div>
+
+                              <div class="col-md-12">
+                                <hr>
+                              </div>
+
+                              <legend>Orang tua perempuan Mempelai Pria</legend>
+
+                              <div class="form-group col-md-6">
+                                  <label for="nama_ibu">Nama</label>
+                                  <input type="text" class="form-control" name="nama_ibu" id="nama_ibu" placeholder="Nama Lengkap">
+                              </div>
+
+                              <div class="form-group col-md-6">
+                                  <label for="alamat_ibu">Alamat</label>
+                                  <input type="text" class="form-control" name="alamat_ibu" id="alamat_ibu" placeholder="Alamat saat ini">
+                              </div>
+
+                              <div class="form-group col-md-6">
+                                  <label for="tgl_lahir_ibu">Tanggal Lahir</label>
+                                  <input type="date" class="form-control" name="tgl_lahir_ibu" id="tgl_lahir_ibu">
+                              </div>
+
+                              <div class="form-group col-md-6">
+                                  <label for="agama_ibu">Agama</label>
+                                  <input type="text" class="form-control" name="agama_ibu" id="agama_ibu" placeholder="Agama">
+                              </div>
+
+                          </fieldset>
+                  </div>
+                </div>
+              
+                <div class="col-md-12">
+                  <div class="col-md-12">
+                          <fieldset>
+                              <legend>Orang tua laki-laki Mempelai Wanita</legend>
+
+                              <div class="form-group col-md-6">
+                                  <label for="nama_ay_cw">Nama</label>
+                                  <input type="text" class="form-control" name="nama_ay_cw" id="nama_ay_cw" placeholder="Nama Lengkap">
+                              </div>
+
+                              <div class="form-group col-md-6">
+                                  <label for="alamat_ay_cw">Alamat</label>
+                                  <input type="text" class="form-control" name="alamat_ay_cw" id="alamat_ay_cw" placeholder="Alamat saat ini">
+                              </div>
+
+                              <div class="form-group col-md-6">
+                                  <label for="tgl_lahir_ay_cw">Tanggal Lahir</label>
+                                  <input type="date" class="form-control" name="tgl_lahir_ay_cw" id="tgl_lahir_ay_cw">
+                              </div>
+
+                              <div class="form-group col-md-6">
+                                  <label for="agama_ay_cw">Agama</label>
+                                  <input type="text" class="form-control" name="agama_ay_cw" id="agama_ay_cw" placeholder="Agama">
+                              </div>
+
+                              <div class="col-md-12">
+                                <hr>
+                              </div>
+
+                              <legend>Orang tua perempuan Mempelai Wanita</legend>
+
+                              <div class="form-group col-md-6">
+                                  <label for="nama_ibu_cw">Nama</label>
+                                  <input type="text" class="form-control" name="nama_ibu_cw" id="nama_ibu_cw" placeholder="Nama Lengkap">
+                              </div>
+
+                              <div class="form-group col-md-6">
+                                  <label for="alamat_ibu_cw">Alamat</label>
+                                  <input type="text" class="form-control" name="alamat_ibu_cw" id="alamat_ibu_cw" placeholder="Alamat saat ini">
+                              </div>
+
+                              <div class="form-group col-md-6">
+                                  <label for="tgl_lahir_ibu_cw">Tanggal Lahir</label>
+                                  <input type="date" class="form-control" name="tgl_lahir_ibu_cw" id="tgl_lahir_ibu_cw">
+                              </div>
+
+                              <div class="form-group col-md-6">
+                                  <label for="agama_ibu_cw">Agama</label>
+                                  <input type="text" class="form-control" name="agama_ibu_cw" id="agama_ibu_cw" placeholder="Agama">
+                              </div>
+
+                          </fieldset>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="col-md-12">
+                          <fieldset>
+                              <legend>Saksi Mempelai Pria</legend>
+
+                              <div class="form-group col-md-6">
+                                  <label for="nama_s">Nama</label>
+                                  <input type="text" class="form-control" name="nama_s" id="nama_s" placeholder="Nama Lengkap">
+                              </div>
+
+                              <div class="form-group col-md-6">
+                                  <label for="tgl_lahir_s">Tanggal Lahir</label>
+                                  <input type="date" class="form-control" name="tgl_lahir_s" id="tgl_lahir_s">
+                              </div>
+
+                              <div class="form-group col-md-12">
+                                  <label for="alamat_s">Alamat</label>
+                                  <input type="text" class="form-control" name="alamat_s" id="alamat_s" placeholder="Alamat saat ini">
+                              </div>
+
+                              <div class="col-md-12">
+                                <hr>
+                              </div>
+
+                              <legend>Saksi Mempelai Wanita</legend>
+
+                              <div class="form-group col-md-6">
+                                  <label for="nama_scw">Nama</label>
+                                  <input type="text" class="form-control" name="nama_scw" id="nama_scw" placeholder="Nama Lengkap">
+                              </div>
+
+                              <div class="form-group col-md-6">
+                                  <label for="tgl_lahir_scw">Tanggal Lahir</label>
+                                  <input type="date" class="form-control" name="tgl_lahir_scw" id="tgl_lahir_scw">
+                              </div>
+
+                              <div class="form-group col-md-12">
+                                  <label for="alamat_scw">Alamat</label>
+                                  <input type="text" class="form-control" name="alamat_scw" id="alamat_scw" placeholder="Alamat saat ini">
+                              </div>
+
+                          </fieldset>
+                  </div>
+                </div>
+              <!--/.OWL CAROUSEL2 END-->
+            </div>
+          </div>
+        </section>
+        <!--/.FORM ORTU END-->
+
+        
+        <footer>
+          <div class="footer-top" style="background-color: #000; margin-top: 5%;">
+            <div class="col-md-12">
+              <input type="submit" name="btn_add" style="background-color: #000; height: 100%; border-color: #000;">
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <div class="container">
+              <div class="row">
+                <a href="http://designscrazed.org/"><img src="images/logo-bottom.png" alt="crafted with love" class="center-block" /></a>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        </form>
+
+      <!--/.CONTENT END-->
+      </div>
+    <!--/.CONTENT-WRAP END-->
+    </div>
+    
+
+    <script>  
+     $(document).ready(function(){  
+
+          $(document).on('click', '#btn_add', function(){  
+
+               var nama_ = document.form1.nama;
+               var tempat_ = document.form1.tempat_lahir;  
+               var tgl_ = document.form1.tgl_lahir;
+               var umur_ = document.form1.umur;
+               var agama_ = document.form1.agama;
+               var alamat_ = document.form1.alamat; 
+               var statwn_ = document.form1.status_wn; 
+               var statkwn_ = document.form1.status_kawin;
+
+               var namacw_ = document.form1.nama_cw;
+               var tempatcw_ = document.form1.tempat_lahir_cw;  
+               var tglcw_ = document.form1.tgl_lahir_cw;
+               var umurcw_ = document.form1.umur_cw;
+               var agamacw_ = document.form1.agama_cw;
+               var alamatcw_ = document.form1.alamat_cw; 
+               var statwncw_ = document.form1.status_wn_cw; 
+               var statkwncw_ = document.form1.status_kawin_cw;
+
+               var namaay_ = document.form1.nama_ay;  
+               var tglay_ = document.form1.tgl_lahir_ay;
+               var agamaay_ = document.form1.agama_ay;
+               var alamatay_ = document.form1.alamat_ay;
+
+               var namaay_cw = document.form1.nama_ay_cw;  
+               var tglay_cw = document.form1.tgl_lahir_ay_cw;
+               var agamaay_cw = document.form1.agama_ay_cw;
+               var alamatay_cw = document.form1.alamat_ay_cw;
+
+               var namaibu_ = document.form1.nama_ibu;  
+               var tglibu_ = document.form1.tgl_lahir_ibu;
+               var agamaibu_ = document.form1.agama_ibu;
+               var alamatibu_ = document.form1.alamat_ibu;
+
+               var namaibu_cw = document.form1.nama_ibu_cw;  
+               var tglibu_cw = document.form1.tgl_lahir_ibu_cw;
+               var agamaibu_cw = document.form1.agama_ibu_cw;
+               var alamatibu_cw = document.form1.alamat_ibu_cw; 
+          });    
+     }); 
+   </script>
+
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.appear.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/classie.js" type="text/javascript"></script>
+    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+    <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/masonry.js" type="text/javascript"></script>
+    <script src="js/smooth-scroll.min.js" type="text/javascript"></script>
+    <script src="js/typed.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+  </body>
+</html>
